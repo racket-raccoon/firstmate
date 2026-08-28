@@ -1,0 +1,14 @@
+Script started on 2026-08-28 16:42:19+01:00 [COMMAND="bash /home/lv/.no-mistakes/evidence/01M14G45S0ZE5Z31HGN2MWMN01/verify-codex-harness-ancestry.sh /home/lv/.no-mistakes/worktrees/4fddba206c91/01M14G45S0ZE5Z31HGN2MWMN01" <not executed on terminal>]
+$ bin/fm-harness.sh  # shell -> codex-linux-sandbox (PID 1)
+codex
+
+$ bin/fm-lock.sh  # same namespace-local PID-1 ancestry
+error: cannot locate harness process in ancestry
+exit status: 1
+
+$ bin/fm-lock.sh status
+lock: free
+
+Result: PID 1 classifies Codex for display/supervision selection, but is not persisted as session-lock ownership.
+
+Script done on 2026-08-28 16:42:19+01:00 [COMMAND_EXIT_CODE="0"]
