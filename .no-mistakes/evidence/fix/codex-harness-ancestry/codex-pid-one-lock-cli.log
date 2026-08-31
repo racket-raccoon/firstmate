@@ -1,0 +1,5 @@
+PID-1 Codex sandbox classification:
+codex
+PID-1 lock acquisition (must fail closed):
+error: cannot locate harness process in ancestry
+exit=1; lock-file=absent
